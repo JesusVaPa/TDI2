@@ -1,0 +1,215 @@
+\documentclass[10pt,a4paper]{protocol}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=2cm,marginparwidth=0.2cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Bright}{HTML}{58318f}
+\definecolor{Green}{HTML}{319866}
+\definecolor{Black}{HTML}{111111}
+\definecolor{LightGrey}{HTML}{515c50}
+\colorlet{heading}{Green}
+\colorlet{accent}{Bright}
+\colorlet{emphasis}{Black}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \risk if you want to
+\renewcommand{\item[$ \bullet $][$ \bullet $]marker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faSpinner}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Protocolo estandarizado}
+\tagline{Taller de Investigación II}
+\made{October 2 2017}
+\logo{3.5cm}{"Logo"}
+
+
+\docinfo{%
+  % can add more \addedtopeople
+  \madeby{Jesús Ángel Vázquez Padilla}{vapa.jesusangel@gmail.com}
+  \addedto{Instituto Tecnológico de León.}{Montadores s/n, Industrial Julian de Obregon, 37290 León, Gto.}
+}
+
+
+\purpose{
+	A la fecha, el mecanizado de alta velocidad es un proceso complejo que requiere de conocimiento empirico de un tiempo considerable, 
+puesto que en él intervienen un gran número de variables, tanto tecnológicas como económicas. Para ello se identifican las variables que tienen 
+mayor influencia sobre los resultados del proceso de mecanizado, tanto desde un punto de vista de calidad de las piezas fabricadas como de la 
+economía de la fabricación.
+} % add a short discription of the purpose for this protocol
+
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makeheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \need.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \need title in the "main" bar.
+\need{Introducción}
+{\bf Título:} Mecanizado a alta velocidad. \cite{einstein}.\\ \vspace*{0.5cm}
+
+\divider
+{\bf Introducción:} El desarrollo integral de las maquinas herramientas de las herramientas de corte y de la tecnología de maquinado posibilitó la aplicación del corte con altas velocidades (HSC). El aumento de las velocidades de corte es una de las formas de aumentar la eficiencia de los procesos productivos a través de la reducción de los tiempos de fabricación. La reducción en varias veces de los tiempos de fabricación, se logra no solo por los tiempos de maquinado sino también por la sustitución o reducción de otros procesos de elaboración que forman parte de la cadena productiva, que en ocasiones son relativamente lentos como son la electroerosión y el acabado manual en la producción de moldes y troqueles.  \\ \vspace*{0.5cm}
+
+Por ser un proceso relativamente nuevo apenas desde la década de los años 90 es que se implementa la introducción del HSC aunque muchas cuestiones tecnológicas aún están sin respuesta requiriendo de profundos y detallados estudios. Por otro lado, las características ya conocidas de esta nueva tecnología indican una buena perspectiva de aplicación en los más diversos segmentos de la industria. 
+En la actualidad las empresas productoras de moldes y matrices en el mundo tienden a expandirse al disponer de un mercado en desarrollo con niveles de mayor exigencia en la calidad, menores plazos de entrega, menores precios y mayor complejidad de los herramentales. 
+Existen diversas razones para que los fabricantes de moldes y matrices tengan éxito en estos tiempos de cambios rápidos. Entre las más importantes se encuentran: 
+\\ 
+
+\begin{itemize}
+	\item[$ \bullet $]En comparación con otros segmentos de la industria tienen una estructura más ágil para actualizar la producción y propiciar el desarrollo de nuevos productos y tecnologías con más facilidad.
+	\item[$ \bullet $]Los productos de consumo popular se tornan obsoletos en menores tiempos debido a las exigencias de los consumidores de disponer de nuevos productos como es por ejemplo el caso de la industria automovilística y la electrónica. La empresa que tenga un plazo grande entre un lanzamiento y otro corre el riesgo de perder espacio.
+	\item[$ \bullet $]Un producto que en la década pasada poseía un ciclo de vida de tres años hoy puede ser de un año. En determinados segmentos de la industria electrónica ese proceso puede ocurrir en meses. 
+	\item[$ \bullet $]La rápida obsolescencia de los productos proporciona importantes volúmenes de trabajo para las empresas herramentales, pues necesitan atender la demanda de moldes y matrices para nuevos modelos de celulares, electrodoméstico, automóviles, motocicletas, etc. Se puede decir que cada alteración de diseño requiere de nuevos herramentales.
+\end{itemize}
+
+Hoy en día, para que las empresas puedan ser competitivas deben conseguir y aplicar recursos para crear valor ofreciendo productos y servicios de mayor calidad y de manera óptima. Adentrándonos en esta tendencia, muchas empresas han hecho grandes inversiones en tecnologías avanzadas de fabricación. Entre ellas, una de las que ha recibido mayor impulso es el mecanizado de alta velocidad. \\ \vspace*{0.5cm}
+
+Tenemos como principal objetivo el obtener conocimiento de aplicación del mecanizado a alta velocidad en la industria, usar las distintas herramientas de corte utilizadas en este tipo de mecanizados, actividad, parámetros tecnológicos del producto a fabricar.
+ \\ \vspace*{0.5cm}
+Teniendo en cuenta que la conveniencia de invertir en un determinado centro de mecanizado depende tanto de factores económicos como tecnológicos, es decir, depende de la inversión que la empresa esté dispuesta a asumir, así como de los resultados esperados en la aplicación concreta, se lleva a cabo un estudio del impacto del mecanizado de alta velocidad desde el punto de vista del producto y el punto de vista de la empresa.\\ \vspace*{0.5cm}
+
+%\marginpar{Planteamiento del Problema}
+\need{Planteamiento del Problema}
+Las empresas han invertido en centros de mecanizado para alta velocidad esperando obtener una reducción sustancial en el tiempo de fabricación de las piezas, así como también una mejora en la calidad de los productos y una disminución de los costes de fabricación. Las ventajas obtenidas por estas grandes inversiones, en general, son difíciles de valorar. Al hablar de mecanizado de alta velocidad, las mejoras en tiempo de fabricación y calidad del producto que produce, no existen realmente datos que corroboren esta afirmación. \\ \vspace*{0.5cm}
+
+Otro aspecto que no ha recibido la suficiente atención en el ámbito del mecanizado de alta velocidad es la implementación de la tecnología en la industria, basándose en un análisis total del proceso. Existe una cierta tendencia a infravalorar los inconvenientes del HSM, como son la corta vida de la herramienta, el elevado coste de los cabezales y la necesidad de controles numéricos especiales. Además, en la mayoría de casos no es suficiente incorporar el centro de mecanizado de alta velocidad en el entorno productivo, sino que resulta necesario adaptarlo, incorporando, por ejemplo, un sistema CAD/CAM capaz de crear adecuadas estrategias para el HSM. Una correcta implantación del HSM suele requerir, además, de una reestructuración de la plantilla, puesto que son necesarias muchas más horas de programación CAM que en caso de otras tecnologías de fabricación, pero en cambio se requiere menos dedicación de operario a pie de máquina debido a la elevada automatización de los centros de mecanizado. \\ \vspace*{0.5cm}
+
+Debido a lo anterior, al realizar la inversión de centros de mecanizado de alta velocidad se debe responder a un análisis muy detallado, debe de tener en cuenta los aspectos mencionados, desde un punto de vista económico, y que permita valorar, en función del tipo de productos a fabricar, la conveniencia de utilizar esta tecnología en un determinado entorno de fabricación. \\ \vspace*{0.5cm}
+
+Las cuestiones a resolver podrian ser las siguientes: ¿cuál es el impacto del HSM después de su implantación? ¿Cómo repercute la implantación del HSM en los productos fabricados? ¿Mejora su calidad? ¿Se reduce el tiempo de fabricación? ¿Cómo se puede seleccionar el centro más adecuado según las necesidades? \\ \vspace*{0.5cm}
+
+\need{Antecedentes}
+%\protosubsection{Antecedentes}
+El fresado es un proceso muy importante en la industria del metal, teniendo numerosas aplicaciones en distintas áreas; entre ellas, la automotriz y la aeronáutica. Un tipo de fresado versátil es el fresado vertical, ya que este puede trabajar en superficies horizontales, verticales e inclinadas; así como realizar operaciones de taladrado, escariado y barrenado. Este tipo de fresado es el utilizado en la recolección de datos sobre el proceso para realizar la experimentación. \\ \vspace*{0.5cm}
+
+En adición al tipo de orientación que puede tener el husillo en una máquina de fresado, se considera un modo de operación llamado fresado periférico, en el que la superficie maquinada es generada por dientes localizados en la periferia de la herramienta. Este tipo de fresado periférico se llama "end milling ", y se puede realizar en centros de maquinado. Esto se refiere al tipo de herramienta de corte, el cual es de un diámetro pequeño (usualmente entre 5 mm y 30 mm de diámetro) y su longitud es varias veces su diámetro. En cuanto a la dirección de la rotación del eje, se escogió el fresado en concordancia o "down milling", donde la dirección de giro coincide con el avance de la herramienta. Este tipo de fresado permite una mejor calidad en la rugosidad superficial.\\ \vspace*{0.5cm}
+
+La Rugosidad Superficial es ampliamente usada como un indicador de calidad en un producto, y en la mayoría de los casos es un requerimiento técnico para las piezas. La rugosidad obtenida durante un proceso de maquinado puede considerarse como la suma de dos efectos independientes: 
+\begin{itemize}
+	\item[$ \bullet $]La Ra "ideal", resultante de la geometría de la herramienta y la velocidad de avance.
+	\item[$ \bullet $]La Ra "natural", resultante de las irregularidades en la operación de corte. 
+\end{itemize}
+
+La Rugosidad Ideal representa el mejor acabado posible que se puede obtener con determinada herramienta y sólo se puede acercar a este resultado en condiciones ideales; es decir, si se elimina el castañeo, la formación de bordes y las inexactitudes en el movimiento de la máquina. En la práctica, es casi imposible alcanzar tales condiciones, y normalmente la rugosidad natural constituye una gran porción de la rugosidad real. \\ \vspace*{0.5cm}
+La Rugosidad Natural es causada por los siguientes procesos en el maquinado:
+\begin{itemize}
+   \item[$ \bullet $]Formación de bordes en el material
+   \item[$ \bullet $]Castañeo o vibraciones en la herramienta. 
+   \item[$ \bullet $]Errores en el movimiento de la máquina. 
+   \item[$ \bullet $]Irregularidades en el mecanismo de avance.
+   \item[$ \bullet $]Defectos en la estructura del material de trabajo.
+   \item[$ \bullet $]Creación de viruta en el maquinado de materiales frágiles o quebradizos. 
+   \item[$ \bullet $]Fisuras en el material de trabajo cuando se cortan metales dúctiles a bajas velocidades. 
+   \item[$ \bullet $]Daño en la superficie, causado por factores como el flujo de rebaba.
+\end{itemize}
+\\ \vspace*{0.5cm}
+\need{Justificación}
+El HSM es una tecnología moderna que mejora varios aspectos de la manufactura en comparación a un maquinado convencional, entre los que están:
+\begin{itemize}
+	\item[$ \bullet $]Remoción de material a altas velocidades.
+	\item[$ \bullet $]Reducción de los tiempos de producción. 
+	\item[$ \bullet $]Disminución de las fuerzas de corte. 
+	\item[$ \bullet $]Menor distorsión de las piezas maquinadas. 
+	\item[$ \bullet $]Incremento en la precisión del maquinado. 
+\end{itemize} \\ \vspace*{0.5cm}
+Su uso dentro de diferentes áreas en la industria va dirigido hacia los siguientes
+sectores productivos de la manufactura: 
+\begin{itemize}
+	\item[$ \bullet $]La primera categoría corresponde al mecanizado de partes de aluminio en la industria automotriz, en partes pequeñas para computadoras y dispositivos médicos. En esta categoría se necesita la remoción rápida de material debido a que los procesos tecnológicos para su manufactura involucran demasiadas operaciones de mecanizado. 
+	\item[$ \bullet $]La segunda categoría corresponde a la industria aeronáutica que involucra remover grandes cantidades de material de piezas de aluminio. 
+	\item[$ \bullet $]El tercer sector es la industria de moldes, la cual requiere de excelentes acabados superficiales en materiales de gran dureza. En este sector es importante maquinar con rapidez y exactitud. 	
+\end{itemize} \\ \vspace*{0.5cm}
+
+\need{Objetivos}
+Tenemos como principal objetivo el obtener conocimiento de aplicación del mecanizado a alta velocidad en la industria, usar las distintas herramientas de corte utilizadas en este tipo de mecanizados, actividad, parámetros tecnológicos del producto a fabricar.\\ \vspace*{0.5cm}
+
+Teniendo en cuenta que la conveniencia de invertir en un determinado centro de mecanizado depende tanto de factores económicos como tecnológicos, es decir, depende de la inversión que la empresa esté dispuesta a asumir, así como de los resultados esperados en la aplicación concreta, se lleva a cabo un estudio del impacto del mecanizado de alta velocidad desde dos perspectivas distintas: \\ \vspace*{0.5cm}
+
+\begin{itemize}
+	\item[$ \bullet $][$ \bullet $] Desde el punto de vista del producto: la calidad del producto, medida en términos de acabado superficial, precisión geométrica y precisión dimensional, variará en función de las características del centro de mecanizado y el control numérico. Esta parte del análisis consiste en valorar cómo afectan las distintas prestaciones de la máquina-herramienta a las características del producto acabado.
+	\item[$ \bullet $][$ \bullet $] Desde el punto de vista de la empresa: la aplicación del mecanizado de alta velocidad en una empresa tiene consecuencias importantes, tanto de tipo organizativo como directamente en los resultados de la misma. Estas consecuencias están claramente vinculadas con el impacto del HSM en el producto, pues una empresa que consigue obtener productos de mayor calidad será más competitiva. El tiempo de fabricación es también un factor importante en relación a los resultados de la empresa, y tiene una clara dependencia de las características del centro de mecanizado que se utilice.
+\end{itemize}
+
+\step{}{\Large Objetivos específicos}{}
+\begin{itemize}
+	\item[$ \bullet $][$ \bullet $] Analizar variables del proceso de mecanizado que tengan mayor influencia sobre el error dimensional de las piezas fabricadas y el tiempo de ciclo.
+	\item[$ \bullet $][$ \bullet $] Investigar el error dimensional de las piezas mecanizadas en función de las características de los centros de mecanizado y de los parámetros programados, el énfasis en la velocidad de avance.
+        \item[$ \bullet $][$ \bullet $] Investigar las ventajas que ofrece el maquinado a alta velocidad como una solución general de mecanizado u oportunidad de optimización en determinados campos de aplicación.
+        \item[$ \bullet $][$ \bullet $] Analizar qué herramientas utilizar, qué papel juega cada una de sus propiedades, seleccionar la herramienta adecuada para cada material, aplicaciones en concreto, cuáles son los factores que influyen en la vida de la herramienta, así como en la calidad superficial de la pieza, etcétera.
+\end{itemize}
+\need{Hipótesis}
+Después de definir los objetivos concretos de la investigación y de plantear el problema, es conveniente formular una o varias preguntas al respecto. Estas preguntas de investigación resumirán lo que habrá de ser la investigación  y contribuirán a encuadrar y clarificar el planteamiento del problema al que ésta se va a avocar.\\ \vspace*{0.5cm}
+
+Hay que evitar el hacer preguntas demasiado generales que no conducen a una investigación concreta; para los efectos del protocolo de investigación, se recomienda que las preguntas que se planteen sean tan específicas y precisas como sea posible.\\ \vspace*{0.5cm}
+
+Así, a través de una o varias preguntas, acompañadas de una breve explicación, se pueden establecer los límites temporales (tiempo) y espaciales (lugar) del estudio y esbozar un perfil tentativo de las unidades de observación (personas, viviendas, periódicos, escuelas, barrios, fenómenos, eventos).\\ \vspace*{0.5cm}
+
+
+Naturalmente, durante el desarrollo de la investigación las preguntas originales pueden modificarse e incluso agregarse otras, ya que en esta medida el estudio puede cubrir diversos aspectos del problema a abordar.\\ \vspace*{0.5cm}
+
+
+Los supuestos o conjeturas son las respuestas provisionales que se dan a la, o las, preguntas de investigación y pueden constituirse en hipótesis dentro del método científico. Se trata por lo tanto de enunciados claros y precisos que guiarán la investigación y que serán puestos a prueba. En este sentido, la hipótesis será un enunciado o proposición que tendrá que ser llevada al campo de los hechos para contrastarla con la realidad y demostrar la relación que existe entre el supuesto que se plantea y los sucesos que tiene lugar en el entorno específico para el que fue construida.\\ \vspace*{0.5cm}
+
+
+La hipótesis puede definirse como una explicación anticipada, o una respuesta tentativa que se formula el investigador con respecto al problema que pretende investigar. Una hipótesis puede ser, por lo tanto, una suposición fundamentada en la observación del fenómeno objeto de la investigación y debe conducir racionalmente a la predicción teórica de algunos hechos reales que, posteriormente, deban ser sometidos a prueba. Si la hipótesis está planteada correctamente sus predicciones podrán ser verificables y se podrán establecer conclusiones.\\ \vspace*{0.5cm}
+
+
+Una hipótesis debe contar, por lo menos, con una variable dependiente y otra independiente. La variable independiente es el elemento, fenómeno o situación que explica, condiciona o determina la presencia de otro, en tanto que la dependiente es el fenómeno o situación explicado que está en función de otro. La(s) variable(s) independiente(s) a su vez que es considerada como la causa posible del fenómeno que se estudia, que origina diversos efectos (variables dependientes) relacionados entre sí y que pueden repercutir bajo ciertas circunstancias en las causas.\\ \vspace*{0.5cm}
+
+Las hipótesis que se formulan al momento de elaborar un protocolo son susceptibles de ser modificadas durante el proceso de investigación, en la medida en que se va profundizando en el conocimiento y aprehensión del tema.
+
+
+\need{Metodología}
+La metodología seguida para la realización de esta investigación es la siguiente:\\ \vspace*{0.5cm}
+\begin{itemize}
+    \item[$ \bullet $][$ \bullet $] Análisis de la literatura y de los estudios realizados, tanto en el ámbito del mecanizado de alta velocidad como en el de la evaluación del impacto de tecnologías avanzadas de fabricación. Este análisis ha permitido el establecimiento de un marco teórico y la elaboración del estado del arte, así como también evaluar los resultados obtenidos en trabajos de investigación que abordan problemáticas más específicas entorno a la fabricación por arranque de viruta.
+\item[$ \bullet $][$ \bullet $] Análisis de las variables y parámetros de los centros de mecanizado de alta velocidad que tienen influencia sobre la precisión geométrica y dimensional de las piezas acabadas, así como sobre el tiempo de ciclo del mecanizado. Clasificación de dichas variables.
+\item[$ \bullet $][$ \bullet $] Analizar características tales como altas velocidades, acabado superficial excelente, bajas fuerzas de corte, alta excitación dinámica, transportes de calor por viruta, entre otras.
+\item[$ \bullet $][$ \bullet $] Investigación de propuestas de mejora qué ofrece el mecanizado de alta velocidad contra la clásica electroerosión utilizada por años en la industria.
+La metodología cumple varias funciones,  primero debe esbozar la forma en que se desarrollará todo el proceso, con el mayor número de detalles posible. Sin embargo, como todo en la planificación,  se puede modificar en algunos aspectos durante la investigación. Si esto sucede, la persona que desarrolla la investigación debe explicar claramente cuáles fueron las modificaciones y las razones de peso que se tomaron en cuenta para variar la metodología. \\ \vspace*{0.5cm}
+
+\step{}{Objetivos metodológicos:}{}
+Apunta las herramientas técnicas o recursos prácticos que nos han de llevar a la consecución de los objetivos específicos.
+Es conveniente elaborar un esquema similar al siguiente ejemplo, con el objeto de obtener una panorámica general de las actividades que se deben realizar a lo largo del proceso de investigación:
+
+
+%\clearpage
+
+%\need[otherinfo]{Sources}
+
+%\nocite{*}
+
+\printbibliography
+
+
+\divider
+
+
+%% If the NEXT page doesn't start with a \need but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
